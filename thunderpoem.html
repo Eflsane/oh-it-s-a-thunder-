@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Startpage</title>
+  <link rel="stylesheet" href="mains.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="scripts/pray.js" async></script>
+  <script type="text/javascript" src="scripts/liricscript.js"></script>
+</head>
+
+<body>
+  <a name="up"></a>
+  <div class="topofsite">
+    <div class="menuhead">
+      <header>
+        <h1>Oh! It's a thunder!</h1>
+      </header>
+      <nav>
+        <a href="index.html" class="leftmenu">На главную</a>
+        <a href="photonder.html" class="leftmenu">Фотографии с грозой</a>
+        <a href="thunculture.html" class="leftmenu">Картины с грозой</a>
+        <a href="thunderpoem.html" class="leftmenu">Стихи про грозу</a>
+        <a href="#" class="leftmenu">Цитаты Великих о грозе</a>
+        <a href="watchmythunder.html" class="leftmenu">Увидь грозу</a>
+        <a href="iseenoevil.html" class="leftmenu">Мобил</a>
+        <div class="liftbut">
+          <a href="#up" class="udscroll" id="upscroll"></a>
+          <a href="#down" class="udscroll" id="downscroll"></a>
+        </div>
+      </nav>
+    </div>
+    <section class="pray">
+      <p>Молись богу Грома!</p>
+      <button type="button" class="praybut"><input type="button" value="Помолиться Перуну" id="praybut"></button>
+    </section>
+  </div>
+  <div class="main">
+    <aside class="adv">
+      <embed type="flash" src="cheese1.swf"/>
+    </aside>
+    <section class="start">
+      <div class="liric">
+        <button onclick="start1()">Александр Блок - Гроза</button>
+        <div id="lir1" onclick="end1()">
+          Гроза прошла, и ветка белых роз
+          В окно мне дышит ароматом…
+          Еще трава полна прозрачных слез,
+          И гром вдали гремит раскатом.
+        </div>
+        <button onclick="start2()">Фёдор Тютчев - весенняя гроз</button>
+        <div id="lir2" onclick="end2()">
+          Люблю грозу в начале мая,
+          Когда весенний, первый гром,
+          как бы резвяся и играя,
+          Грохочет в небе голубом.
+
+          Гремят раскаты молодые,
+          Вот дождик брызнул, пыль летит,
+          Повисли перлы дождевые,
+          И солнце нити золотит.
+
+          С горы бежит поток проворный,
+          В лесу не молкнет птичий гам,
+          И гам лесной и шум нагорный -
+          Все вторит весело громам.
+
+          Ты скажешь: ветреная Геба,
+          Кормя Зевесова орла,
+          Громокипящий кубок с неба,
+          Смеясь, на землю пролила.
+        </div>
+      </div>
+    </section>
+    <aside class="adv">
+      Здесь может быть ваша реклама
+    </aside>
+  </div>
+  <footer>
+    copyright раскрывающий секреты <script>
+      let date = new Date();
+      let year = date.getFullYear();
+      document.write(year);
+    </script>
+    <a name="down"></a>
+  </footer>
+</body>
+
+</html>
