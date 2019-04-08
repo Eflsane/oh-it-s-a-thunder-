@@ -1,0 +1,7 @@
+@media (max-width: 800px) {
+  .topofsite{display: block;}
+  .menuhead{border-bottom: 2px solid grey}
+  .udscroll{width:70px; height: 70px;  background-repeat: no-repeat; background-size: contain;}
+  .main{display: block;}
+  .adv embed{width: 100%;height: auto;}
+}
