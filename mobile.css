@@ -1,7 +1,10 @@
 @media (max-width: 800px) {
   .topofsite{display: block;}
   .menuhead{border-bottom: 2px solid grey}
-  .udscroll{width:70px; height: 70px;  background-repeat: no-repeat; background-size: contain;}
+  .udscroll{width:50px; height: 50px;  background-repeat: no-repeat; background-size: contain;}
   .main{display: block;}
+  .adv{border-top: 1px solid black; border-bottom: 1px solid black;}
   .adv embed{width: 100%;height: auto;}
+  .thunderview img {left: 14%; max-height: 25%; max-width: 25%;}
+  .thunderview img:focus { max-width: 100%; max-height: 100%; z-index: 1; left: auto;}
 }

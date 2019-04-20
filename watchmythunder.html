@@ -24,9 +24,7 @@
         <a href="photonder.html" class="leftmenu">Фотографии с грозой</a>
         <a href="thunculture.html" class="leftmenu">Картины с грозой</a>
         <a href="thunderpoem.html" class="leftmenu">Стихи про грозу</a>
-        <a href="#" class="leftmenu">Цитаты Великих о грозе</a>
-        <a href="watchmythunder.html" class="leftmenu">Увидь грозу</a>
-        <a href="iseenoevil.html" class="leftmenu">Мобил</a>
+        <a href="watchmythunder.html" class="leftmenu" class="disabled">Увидь грозу</a>
       </nav>
     </div>
     <section class="pray">
@@ -34,19 +32,21 @@
       <button type="button" class="praybut"><input type="button" value="Помолиться Перуну" id="praybut"></button>
     </section>
   </div>
-  <div class="liftbut">
+  <!--<div class="liftbut">
     <a href="#up" class="udscroll" id="upscroll"></a>
     <a href="#down" class="udscroll" id="downscroll"></a>
-  </div>
+  </div>-->
   <div class="main">
     <aside class="adv">
       <embed type="application/x-shockwave-flash" src="cheese1.swf" pluginspage="http://www.adobe.com/go/getflashplayer" />
     </aside>
     <section class="start">
-      <button onclick="nplay()" class="thundon"> kokoro </button>
-      <button onclick="npause()" class="thundon"> bop </button>
+      <div class="beginthunder">
+        <div onclick="nplay()" class="thundon">begin</div>
+        <div onclick="npause()" class="thundoff">stop</div>
+      </div>
       <div class="stormgrad">
-        <img src="pics\stormlight.gif" alt="what a crap!"/>
+        <img src="pics\stormlight.gif" alt="Storm here"/>
       </div>
     </section>
     <aside class="adv">

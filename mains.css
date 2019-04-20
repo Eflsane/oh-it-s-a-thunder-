@@ -29,7 +29,7 @@ header {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   background-color: rgb(0, 0, 0);
-  font-family: NewZelekC;
+  font-family: "NewZelekC";
 }
 
 nav {
@@ -53,6 +53,18 @@ a.leftmenu {
 .leftmenu:hover {
   background-color: rgb(200, 191, 231);
   color: rgb(42, 16, 29);
+}
+
+.disabled a {
+  pointer-events: none;
+  cursor: default;
+  color: black;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: yellow;
 }
 
 .pray {
@@ -81,7 +93,7 @@ a.leftmenu {
 .liftbut {
   text-align: center;
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   left: 5%;
   bottom: 0;
 }
@@ -128,12 +140,46 @@ a.leftmenu {
   font-size: 140%;
 }
 
+.beginthunder {
+  height: 12%;
+}
+
+.thundon {
+  background-image: url(pics/thundplaybutnonact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  color: rgba(0,0,0,0);
+  width: 10%;
+  height: 100%;
+}
+
+.thundon:hover {
+  background-image: url(pics/thundplaybutact.png);
+}
+
+.thundoff {
+  background-image: url(pics/thundstopbutnonact.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  color: rgba(0,0,0,0);
+  width: 10%;
+  height: 100%;
+}
+
+.thundoff:hover {
+  background-image: url(pics/thundstopbutact.png);
+}
+
 .stormgrad {
-  width:100%
+  width:100%;
+  height: 100%;
 }
 
 .stormgrad img {
   width: 100%;
+  max-height: 84%;
 }
 
 .thunderview {
@@ -150,14 +196,16 @@ a.leftmenu {
 
 .thunderview img:focus {
   position: relative;
-  left: -20%;
-  max-width: 100%;
-  z-index: 1;
+  left: -15%;
+  max-width: 130%;
+  z-index: 11;
 }
 
 #lir1, #lir2 {
-  display: none;
-  font-size: 70%;
+  /*display: none;*/
+  height: 0%;
+  font-size: 0%;
+  transition: .6s;
 }
 
 .adv {
@@ -165,12 +213,31 @@ a.leftmenu {
   flex: 1;
   margin: auto;
   width: 100%;
+  height: 100%;
 }
 
-.adv embed{
+.adv embed {
   width: 90%;
   height: 5em;
+}
 
+#advsby {
+  position: fixed;
+  width: 100%;
+  bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 11;
+  display: block;
+}
+
+.ok1 {
+  background-color: darkblue;
+  width: 20%;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  cursor: pointer;
 }
 
 footer {
