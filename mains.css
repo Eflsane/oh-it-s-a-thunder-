@@ -1,11 +1,15 @@
 @font-face {
     font-family: "NewZelekC";
     src: url("fonts/15539.otf");
-    font-family: "notperfect regular";
-    src: url("fonts/11764.ttf");
-    font-family: "La Macchina(RUS BY LYAJKA)";
-    src: url("fonts/13885.otf");
    }
+@@font-face {
+  font-family: "notperfect regular";
+  src: url("fonts/11764.ttf") format("truetype");
+}
+@font-face {
+  font-family: "La Macchina(RUS BY LYAJKA)";
+  src: url("fonts/13885.otf");
+}
 
 body {
  background-color: #000;
@@ -55,13 +59,13 @@ a.leftmenu {
   color: rgb(42, 16, 29);
 }
 
-.disabled a {
+#disabled a {
   pointer-events: none;
   cursor: default;
   color: black;
 }
 
-.disabled {
+#disabled {
   pointer-events: none;
   cursor: default;
   background-color: yellow;
@@ -224,7 +228,7 @@ a.leftmenu {
 #advsby {
   position: fixed;
   width: 100%;
-  bottom: 5%;
+  bottom: 8%;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
