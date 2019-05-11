@@ -8,4 +8,4 @@ if (a === 2) alert('*Вас ослепило сиянием молгии');
 if (a === 3) alert('Добро пожаловать в обитель гроз');
 
 
-function okb1() { document.getElementById('advsby').style = "display: none"; }
+function okb1() { document.getElementById('advsby').style = 'display: none';}
