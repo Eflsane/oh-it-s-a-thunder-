@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Startpage</title>
+  <link rel="stylesheet" href="mains.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script type="text/javascript" src="scripts/scriptformytears.js" async></script>
+  <style media="screen">
+  #begining {
+    font-size: 150%;
+  }
+
+  .quest2, .quest3, .quest4, .result {
+    display: none;
+  }
+  </style>
+</head>
+
+<body>
+  <a name="up"></a>
+  <div class="topofsite">
+    <div class="menuhead">
+      <header>
+        <h1>Oh! It's a thunder!</h1>
+      </header>
+      <nav>
+        <a href="index.html" class="leftmenu" id="disabled">На главную</a>
+        <a href="photonder.html" class="leftmenu">Фотографии с грозой</a>
+        <a href="thunculture.html" class="leftmenu">Картины с грозой</a>
+        <a href="thunderpoem.html" class="leftmenu">Стихи про грозу</a>
+        <a href="watchmythunder.html" class="leftmenu">Увидь грозу</a>
+      </nav>
+    </div>
+    <section class="pray">
+      <p>Молись богу Грома!</p>
+      <button type="button" class="praybut"><input type="button" value="Помолиться Перуну" id="praybut"></button>
+    </section>
+  </div>
+  <div class="liftbut">
+    <a href="#up" class="udscroll" id="upscroll"></a>
+    <a href="#down" class="udscroll" id="downscroll"></a>
+  </div>
+  <main class="main">
+    <aside class="adv">
+      <embed type="application/x-shockwave-flash" src="cheese1.swf" pluginspage="http://www.adobe.com/go/getflashplayer" />
+    </aside>
+    <section class="start">
+    <p id = "begining">Ответьте на вопросы</p>
+    <div class="quest1">
+      <p>question 1:</p>
+      <p>С какой вероятностью в вас ударит молния?</p>
+      <section>
+        <p><input type="radio" name="que1" value="" onclick="answer0()"> 1:1 Я поймаю! </p>
+        <p><input type="radio" name="que1" value="" onclick="answer0()"> 1:6000 </p>
+        <p><input type="radio" name="que1" value="" onclick="answer0()"> 1:3000 </p>
+        <p><input type="radio" name="que1" value="" onclick="answer0()"> 1:2000000 </p>
+      </section>
+    </div>
+    <div class="quest2">
+      <p>question 2:</p>
+      <p>Какому богу вы молитесь для вызова молнии?</p>
+      <section>
+        <p><input type="radio" name="que2" value="" onclick="answer1()"> Зевсу </p>
+        <p><input type="radio" name="que2" value="" onclick="answer1()"> Здесь должон быть ещё один бог, но 228 </p>
+        <p><input type="radio" name="que2" value="" onclick="answer1()"> Перуну </p>
+        <p><input type="radio" name="que2" value="" onclick="answer1()"> Зачем её вызывать? </p>
+      </section>
+    </div>
+    <div class="quest3">
+      <p>question 3:</p>
+      <p>Что вы чувствуете, когда слышите гром?</p>
+      <section>
+        <p><input type="radio" name="que3" value="" onclick="answer2()"> Гордость за моего бога (Перуна!) </p>
+        <p><input type="radio" name="que3" value="" onclick="answer2()"> Страх </p>
+        <p><input type="radio" name="que3" value="" onclick="answer2()"> Радость, любовь моего бога летит в меня! </p>
+        <p><input type="radio" name="que3" value="" onclick="answer2()"> Желание не слышать </p>
+      </section>
+    </div>
+    <div class="quest4">
+      <p>question 4:</p>
+      <p>Переведите с непонятности: Ⰿⱁⰾⰹⱄⱐ ⰲⰵⰾⰹⰽⱁⰿⱆ Ⱂⰵⱃⱆⱀⱆ!</p>
+      <section>
+        <p><input type="radio" name="que4" value="" onclick="answer3()"> Слава грозе! </p>
+        <p><input type="radio" name="que4" value="" onclick="answer3()"> "Непереводимая ересь" </p>
+        <p><input type="radio" name="que4" value="" onclick="answer3()"> Молись великому Перуну! </p>
+        <p><input type="radio" name="que4" value="" onclick="answer3()"> *Вы ищите выход, но он один - окно! </p>
+      </section>
+    </div>
+    <div class="result">
+      <p>results:</p>
+      <section id="concl">
+
+      </section>
+    </div>
+  </section>
+  <aside class="adv">
+    Здесь может быть ваша реклама
+  </aside>
+</main>
+<div id="advsby">
+  Реклама на сайте предоставлена обществом анонимных демиургов. Будь человеком - выключи adblock.
+  <div class="ok1" onclick="okb1()">OK</div>
+</div>
+<footer>
+  copyright раскрывающий секреты <script>
+    let date = new Date();
+    let year = date.getFullYear();
+    document.write(year);
+  </script>
+  <a name="down"></a>
+  <p class="newstyle" onclick="nows(0)">тык</p>
+</footer>
+<script type="text/javascript" src="scripts/pray.js" async></script>
+<script type="text/javascript" src="scripts/newstyle.js"></script>
+<script type="text/javascript" src="scripts/test.js"></script>
+</body>
+
+</html>
